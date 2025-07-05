@@ -1,0 +1,22 @@
+{
+  "Examens": [
+    {
+      "id": "1",
+      "Responsable": "test",
+      "coeff": 2,
+      "Session": "principale"
+    },
+    {
+      "Responsable": "TAsnim",
+      "Session": "principale",
+      "coeff": "2",
+      "id": "2"
+    },
+    {
+      "id": "0341",
+      "Responsable": "Az;d;,d",
+      "Session": "principale",
+      "coeff": "2"
+    }
+  ]
+}

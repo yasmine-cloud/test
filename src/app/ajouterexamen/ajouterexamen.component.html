@@ -1,0 +1,42 @@
+
+<div class="container">
+<form [formGroup]="addF">
+    
+<!--
+    <div>
+        <span class="input-group-text">id</span>
+    <input type="number" formControlName="id" aria-label="id" class="form-control"><br>
+    </div>
+-->
+    <div>
+        <span class="input-group-text">Responsable</span>
+        <input type="text" formControlName="Responsable"  aria-label="Responsable" class="form-control"  ><br>
+    </div>
+     <div class="alert alert-danger" *ngIf="addF.get('Responsable')?.invalid && addF.get('Responsable')?.errors?.['maxlength']">
+   A-Z 10
+    </div>
+    <br>
+
+    <div>
+    <span class="input-group-text">coeff</span>
+    <input type="text" formControlName="coeff" aria-label="coeff" class="form-control"><br>
+    </div>
+ <div class="alert alert-danger" *ngIf="addF.get('coeff')?.invalid && addF.get('coeff')?.touched">
+     1-5
+    </div>
+    <br>
+     
+       <div>
+    <span class="input-group-text"> Session</span>
+    <input type="text" formControlName="Session" aria-label="Session" class="form-control"><br>
+    </div>
+ <div class="alert alert-danger" *ngIf="addF.get('Session')?.invalid && addF.get('Session')?.touched">
+      Principale 
+    </div>
+    <br>
+    
+<button class="btn btn-primary" (click)="add()" [disabled]="addF.invalid">Ajouter</button>
+      
+
+</form>
+</div>

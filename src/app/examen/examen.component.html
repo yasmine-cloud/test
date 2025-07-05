@@ -1,0 +1,23 @@
+<div class="row">
+  <div
+    *ngFor="let r of listCategorie"
+    class="card m-3"
+    style="width: 18rem"
+  >
+    <div class="card-body">
+      
+      <h5 class="card-title">{{ r.Responsable }}</h5>
+     
+      <p class="card-text">{{ r.coeff}}</p>
+       <h5 class="card-title">{{ r.Session }}</h5>
+
+
+    <button class="btn btn-danger" (click)="supprime(r.id)">Delete</button>
+
+
+     <a href="#" class="btn btn-primary" [routerLink]="['/examenupdate', r.id]" >update</a>
+    
+    </div>
+  </div>
+
+
